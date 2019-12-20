@@ -26,7 +26,7 @@ public class CssEntry
 	private static String newline = System.getProperty("line.separator");
 
 	private String identifier;
-	private List<Property> properties = new ArrayList<>();;
+	private List<Property> properties = new ArrayList<>();
 
 	public CssEntry(String identifier)
 	{
