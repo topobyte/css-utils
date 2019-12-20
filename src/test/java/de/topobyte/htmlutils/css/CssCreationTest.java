@@ -29,16 +29,16 @@ public class CssCreationTest
 		CssFile cssFile = new CssFile();
 
 		CssEntry entry1 = new CssEntry(".header");
-		entry1.addProperty(new Property("foo", "bar"));
-		entry1.addProperty(new Property("misc", "test"));
+		entry1.add(new Property("foo", "bar"));
+		entry1.add(new Property("misc", "test"));
 		cssFile.addEntry(entry1);
 
 		CssEntry entry2 = new CssEntry(".tool");
-		entry2.addProperty(new Property("this", "that"));
+		entry2.add(new Property("this", "that"));
 		cssFile.addEntry(entry2);
 
 		CssEntry entry3 = new CssEntry("div.tool, div.foo.bar");
-		entry3.addProperty(new Property("this", "that"));
+		entry3.add(new Property("this", "that"));
 		cssFile.addEntry(entry3);
 
 		String css = cssFile.getText();

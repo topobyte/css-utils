@@ -33,9 +33,16 @@ public class CssEntry
 		this.identifier = identifier;
 	}
 
-	public void addProperty(Property property)
+	public CssEntry add(Property property)
 	{
 		properties.add(property);
+		return this;
+	}
+
+	public CssEntry add(String key, String value)
+	{
+		properties.add(new Property(key, value));
+		return this;
 	}
 
 	public String getText()
